@@ -1,0 +1,150 @@
+:root {
+    /* 
+        FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+        COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+        TOGETHER WILL MAKE UP A GIVEN THEME
+    */
+    --swatch-foundation:    #d9d6cc; /* USED FOR BODY BACKGROUND */
+    --swatch-primary:       #40454e; /* DOMINANT COLOR, USED FOR MOST BACKGROUNDS */
+    --swatch-complement:    #353a44; /* USED IN CONTRAST BACKGROUND FOR TOOLBARS */
+    --swatch-contrast:      #111111; /* USED IN MOUSE-OVER SELECTION OF LARGE ELEMENTS */
+    --swatch-accent:        #ffc819; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+
+    --swatch-text:          #e9edf0; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */ 
+    --swatch-text-accent:   #ffc819; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+
+    --font-primary:         'Consolas', sans-serif;
+}
+
+#grid-container {
+    background-color: var(--swatch-foundation);
+    font-family: var(--font-primary);
+}
+#text_input{
+    background-color: var(--swatch-primary);
+    height: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 1.2%;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    padding-right: 0;
+    font-size: small;
+    color: var(--swatch-text);
+    background-color: rgb(87, 93, 105);
+    font-family: 'Consolas', sans-serif;
+    width: 25%;
+    
+}
+#date_input{
+    color: var(--swatch-text);
+    background-color: rgb(87, 93, 105);
+    margin-top: -1%;
+    margin-bottom: -1%;
+    font-size: small;
+    width: 25%;
+
+    font-family: 'Consolas', sans-serif;
+}
+
+#status_input{
+    color: var(--swatch-text);
+    background-color: rgb(87, 93, 105);
+    margin-top: -1%;
+    margin-bottom: -1%;
+    font-size: small;
+    width: 25%;
+
+    font-family: 'Consolas', sans-serif;
+}
+
+.grid-item {
+    background-color: var(--swatch-primary);
+}
+
+#navbar {
+    box-shadow: 2px 2px 2px var(--swatch-primary); 
+}
+
+#left-sidebar {
+    background-color: var(--swatch-complement);
+    color: rgb(233,237,240);
+    box-shadow: 2px 2px 2px var(--swatch-primary); 
+
+}
+
+#workspace {
+    background-color: var(--swatch-primary);
+    color: rgb(233,237,240);
+    box-shadow: 2px 2px 2px var(--swatch-primary); 
+
+}
+
+#title-div {
+    color: rgb(255,200,25);
+    font-weight: normal;
+    font-size: 16pt;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+
+#left-sidebar-header {
+    border-bottom: dotted;
+    font-size: 113%;
+    background-color: var(--swatch-complement);
+}
+
+#todo-list-table-header {
+    border-bottom: dotted;
+}
+
+.list-header-card {
+    border-bottom: dotted;
+}   
+
+.list-item-card {
+    height: 100%;  
+    width: 97%;
+    border-bottom: 1px solid;
+}
+
+.todo_button {
+    cursor:pointer;
+    /* background-color: var(--swatch-complement); */
+}
+
+.todo_button:hover, .lists_items_todo:hover {
+    background-color:rgb(87, 93, 105);
+    /* background-color:rgb(87, 93, 105); */
+
+    /* background-color:red; */
+}
+
+.material-icons:hover{
+    background-color:    rgba(255,255,255, 0.7);
+    border-radius: 3px;
+    cursor:pointer;
+
+}
+.lists_items:hover{
+    background-color:    rgba(255,255,255, 0.7);
+}
+
+.special_yellow{
+    color: #ffc800;
+}
+
+.shrink_controls{
+    margin-left: 8%;
+width: 17%;
+}
+.disable_button{
+    color:     #322d2d;
+    pointer-events:none;
+    cursor: default;
+}
+
+.first_list{
+    background-color:#ffc800;
+}
+
+

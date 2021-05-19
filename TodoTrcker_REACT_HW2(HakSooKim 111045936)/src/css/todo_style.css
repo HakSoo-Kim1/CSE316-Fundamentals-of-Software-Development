@@ -1,0 +1,152 @@
+:root {
+    /* 
+        FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+        COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+        TOGETHER WILL MAKE UP A GIVEN THEME
+    */
+    --swatch-foundation:    #d9d6cc; /* USED FOR BODY BACKGROUND */
+    --swatch-primary:       #40454e; /* DOMINANT COLOR, USED FOR MOST BACKGROUNDS */
+    --swatch-complement:    #353a44; /* USED IN CONTRAST BACKGROUND FOR TOOLBARS */
+    --swatch-contrast:      #111111; /* USED IN MOUSE-OVER SELECTION OF LARGE ELEMENTS */
+    --swatch-accent:        #ffc819; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+
+    --swatch-text:          #e9edf0; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */ 
+    --swatch-text-accent:   #19c8ff; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+    --font-primary:         'Consolas', sans-serif;
+}
+
+#root {
+    background-color: var(--swatch-foundation);
+    font-family: var(--font-primary);
+}
+
+#navbar {
+    background-color: var(--swatch-primary);
+    box-shadow: 2px 2px 2px var(--swatch-primary); 
+    color: rgb(255,200,25);
+    font-weight: bold;
+    font-size: 18pt;
+}
+#container{
+    box-shadow: 2px 2px 2px var(--swatch-primary); 
+}
+#left-sidebar {
+    background-color: var(--swatch-complement);
+    color: rgb(233,237,240);
+}
+
+#left-sidebar-header {
+    font-size: large;
+    border-bottom: 2px dotted;
+}
+
+#todo-list-header-card {
+    border-bottom: 2px dotted;
+font-size: larger;
+}
+
+#workspace {
+    background-color: var(--swatch-primary);
+    color: rgb(233,237,240);
+}
+
+#title-div {
+    color: rgb(255,200,25);
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    font-weight: normal;
+}
+
+#currentList{
+    color: rgb(255,200,25);
+}
+#undo-button{
+    /* background-color: red; */
+}
+
+#todo-list-table-header {
+    border-bottom: dotted;
+}
+
+.list-header-card {
+    border-bottom: dotted;
+}
+
+.list-item-control {
+    cursor: pointer;
+}
+
+
+.input-col,.list-edit-input-col{
+background-color:rgb(87, 93, 105);
+color: #e9edf0;
+font-size:small; 
+font-family: 'Consolas', sans-serif;
+font-weight:lighter;
+}
+
+.list-item-card {
+    border-bottom: 1px solid;
+        font-weight: normal;
+}
+
+.todo-list-button {
+    cursor:pointer;
+    background-color: var(--swatch-complement);
+    font-weight: normal;
+}
+
+.todo-list-button:hover {
+    background-color:rgba(255,255,255, 0.7);
+}
+
+.todo-button {
+    cursor:pointer;
+    /* background-color: var(--swatch-complement); */
+    font-weight: normal;
+}
+
+.todo-button:hover {
+    background-color:rgb(87, 93, 105);
+    cursor:pointer;
+
+}
+
+.list-item-card:hover{
+    background-color:rgb(87, 93, 105);
+}
+
+
+.MuiSvgIcon-root:hover{
+    /* background-color:rgb(87, 93, 105); */
+    background-color:  rgba(255,255,255, 0.7);
+    border-radius: 3px;
+}
+
+.modal-button:hover{
+    background-color:  rgba(255,255,255, 0.7);
+    border-radius: 3px;
+
+}
+#add-list-button {
+    color: var(--swatch-accent);
+}
+
+.status-incomplete {
+    color: var(--swatch-accent);
+}
+
+.status-complete {
+    color: var(--swatch-text-accent);
+}
+
+#add-item-button, #delete-list-button, #close-list-button {
+    text-align: center;
+}
+
+.disable_button{
+    color:     #322d2d !important;
+    pointer-events:none !important;
+    cursor: default !important;
+}
+

@@ -1,0 +1,293 @@
+#root {
+    height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+/* ----------------------------- Top-Level Setup ---------------------------- */
+
+
+.modal-input {
+    width: 100%;
+}
+
+.modal {
+    width: 450px;
+    border-color: white;
+    border-width: 2.0px;
+}
+
+.modal-col-gap{
+    column-gap: 24px;
+}
+
+.modal-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.modal-spacer {
+    height: 24px;
+}
+
+.main-login-modal {
+    padding: 24px 24px 0px 24px;
+}
+
+.modal-error {
+    height: 24px;
+    align-items: center;
+    display: flex;
+}
+
+.table-input {
+    width: 100%;
+}
+
+
+.table-input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-input-class {    
+    padding-left: 1.2em;
+    color : red !important;
+    height: 1.9em !important;
+}
+
+.welcome{
+    padding-left: 32%;
+padding-right: 32%;
+padding-top: 2%;
+text-align: center;
+font-size: 45px;
+font-weight: bolder;
+}
+
+.mapSelection {
+    width: 100%;
+    height: 100%;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 4%;
+    text-align: center;
+    // font-size: 45px;
+    font-weight: bolder;
+    padding-bottom: 8%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "mapSelection-Header mapSelection-Header"
+      "mapSelection-Ls mapSelection-Rs"
+      "mapSelection-Ls mapSelection-Rs";
+  }
+  .mapSelection-Header { 
+    grid-area: mapSelection-Header;
+    padding-top: 1%;
+ }
+  .mapSelection-Ls { 
+      grid-area: mapSelection-Ls;
+        overflow-y: auto;
+        overflow-x: hidden;
+    ; }
+.mapSelection-Rs { grid-area: mapSelection-Rs; }
+
+.yellow-hover:hover { color: yellow; }
+
+
+.regionSpreadSheet{
+    padding-right: 12%;
+    padding-left: 12%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.regionSpreadSheet {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 10% 4% 14% 18% 14% 35%;
+    grid-template-rows: 8.3% 5.7% 86%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "SpreadSheet-icon SpreadSheet-icon SpreadSheet-title SpreadSheet-title SpreadSheet-title SpreadSheet-title SpreadSheet-title"
+      "SpreadSheet-empty SpreadSheet-titleHeader SpreadSheet-titleHeader SpreadSheet-capitalHeader SpreadSheet-leaderHeader SpreadSheet-flagHeader SpreadSheet-landmarkHeader"
+      "SpreadSheet-tableBody SpreadSheet-tableBody SpreadSheet-tableBody SpreadSheet-tableBody SpreadSheet-tableBody SpreadSheet-tableBody SpreadSheet-tableBody";
+      }
+  
+
+.SpreadSheet-title span{ 
+        color:rgb(69, 132, 173);
+      }
+      
+  .SpreadSheet-table-icons-add{
+    color: rgb(4, 224, 4);
+  }
+  .SpreadSheet-table-icons-undo-redo{
+        color:white;
+  }
+  .SpreadSheet-table-icons-add:hover{
+    color:green;
+  }
+  
+.SpreadSheet-icon { grid-area: SpreadSheet-icon; }
+.SpreadSheet-title { 
+    grid-area: SpreadSheet-title;
+    font-size: 33px;      
+    text-align: center;
+    padding-right: 18%;
+    font-weight: bolder;
+    color:white;
+}
+.SpreadSheet-titleHeader { grid-area: SpreadSheet-titleHeader; }
+.SpreadSheet-landmarkHeader { grid-area: SpreadSheet-landmarkHeader; }
+.SpreadSheet-flagHeader { grid-area: SpreadSheet-flagHeader; }
+.SpreadSheet-leaderHeader { grid-area: SpreadSheet-leaderHeader; }
+.SpreadSheet-capitalHeader { grid-area: SpreadSheet-capitalHeader; }
+.SpreadSheet-empty { grid-area: SpreadSheet-empty; }
+.SpreadSheet-tableBody { 
+    grid-area: SpreadSheet-tableBody;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.spreadsheetTableCell {
+    width: 100%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 5% 14% 14% 18% 14% 35%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "deleteColumn nameColumn capitalColumn leaderColumn flagColumn landmarkColumn";
+  }
+  
+  .deleteColumn { 
+      grid-area: deleteColumn; }
+  
+  .nameColumn { grid-area: nameColumn; }
+  
+  .capitalColumn { grid-area: capitalColumn; }
+  
+  .leaderColumn { grid-area: leaderColumn; }
+  
+  .flagColumn { grid-area: flagColumn; }
+  
+  .landmarkColumn { grid-area: landmarkColumn; }
+
+.nameColumn:hover, .deleteColumn:hover,.capitalColumn:hover,.leaderColumn:hover,.flagColumn:hover,.landmarkColumn:hover{
+    background-color:#f0f8ff;
+}
+  .regionViewer {
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 4%;
+    display: grid;
+    grid-template-columns: 35% 20% 45%;
+    grid-template-rows: 100%;
+    grid-gap: 0px 0px;
+    gap: 0px 0px;
+    grid-template-areas: "regionViewerLS regionViewerEmptyColumn regionViewerRS";
+  }
+
+  .regionViewerEmptyColumn { grid-area: regionViewerEmptyColumn; }
+
+  .regionViewerLS { 
+    width: 100%;
+    height: 100%;
+    grid-area: regionViewerLS;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 40% 8% 45%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "regionViewer-icons"
+      "regionViewer-flag"
+      "regionViewer-space"
+      "regionViewer-textbox";
+    }
+
+    .regionViewerRS { 
+        width: 100%;
+        height: 100%;
+        grid-area: regionViewerRS;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 7% 85% 8%;
+        gap: 0px 0px;
+        grid-template-areas:
+          "regionViewer-LMheader"
+          "regionViewer-LMtable"
+          "regionViewer-LMaddbox"; 
+        }
+.regionViewer-landmarkInput{
+    width:100%;
+    height:100%;
+    background: #696969!important;
+    color:red !important;
+}
+
+.RegionViewerText{
+    padding-top: 15px;
+    color: white;
+font-size: 20px;
+font-weight: 700;
+}
+
+.logoSpace{
+    width: 13%;
+}
+
+.navigatorSpace{
+    width: 67%; 
+}
+
+.ancestorNavigator{
+    width:57%;
+}
+
+.siblingNavigator{
+    width:43%;
+}
+
+.landmarkRow {
+    display: grid;
+    grid-template-columns: 7% 7% 86%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "landmarkEdit landmarkDelete landmarkText";
+  }
+  .landmarkEdit { grid-area: landmarkEdit; }
+  .landmarkDelete { grid-area: landmarkDelete; }
+  .landmarkText { grid-area: landmarkText; }
+.landmarkInput{
+    width: 90%;
+}
+.RegionViewerEdit{
+    padding:0px;
+    color:rgb(255, 166, 0);
+}
+
+.RegionViewerEdit :hover{
+    color:yellow;
+    padding:0px;
+
+}
+.RegionViewerSelect{
+    color:Black;
+    height: 150%;
+width: 100%;
+
+}
